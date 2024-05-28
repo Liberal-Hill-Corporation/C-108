@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+  </head>
+
+  <body class="bg bg-warning">
+      
+        <div class="col-xs-12 header_div text-center bg bg-info">
+          <h2 class="text-primary">Sound controlled animals</h2>
+          <p class="text-success">Note - Play different sounds like barking, meowing, roaring and mooing to see funny animals</p> 
+        </div>
+        <div class="main_div bg bg-warning text-danger">
+          <center>
+            <br>
+            <button class="btn btn-success" onclick="startClassification();">START</button>
+            <h3 id="result_label">I can hear</h3>
+            <h3 id="result_confidence"></h3>
+                <img id="img_detect" width="400" height="400">
+            </div>
+            <div class="copy_right_footer">Developed by Naitik Sinha</div>
+        </center>
+    </body>
+</html>
